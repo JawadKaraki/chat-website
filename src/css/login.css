@@ -1,0 +1,91 @@
+.Login {
+  padding-bottom: 200px;
+  background-color: transparent;
+  z-index: 1;
+  color: #f9f9f9;
+}
+h1 {
+  margin-top: 250px;
+  color: #f9f9f9;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+}
+#signup-link {
+  position: relative;
+  color: #f9f9f9;
+  font-size: 12px;
+  top: 150px;
+  line-height: 200%;
+}
+.Login input {
+  color: #f9f9f9;
+  background-color: transparent;
+  border: 0.8px solid #f9f9f9;
+  display: block;
+  margin: auto;
+  height: 50px;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 400px;
+}
+#email {
+  margin-top: 20px;
+}
+#submit {
+  width: 50%;
+  max-width: 200px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#or {
+  margin-top: 20px;
+}
+#google {
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  border-radius: 10px;
+  border: 0.8px solid #f9f9f9;
+  height: 60px;
+  width: 80%;
+  max-width: 400px;
+  color: #f9f9f9;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  margin: auto;
+  margin-top: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+}
+#google p {
+  z-index: 1;
+  width: 80%;
+  text-align: start;
+  font-size: 16px;
+}
+#google img {
+  z-index: 1;
+  width: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 20px;
+}
+.error {
+  color: red;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}

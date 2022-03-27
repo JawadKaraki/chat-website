@@ -1,0 +1,23 @@
+.App {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  text-align: center;
+}
+#darker {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+body {
+  background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/ead8f948763993.58a1a3a8dab8d.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}

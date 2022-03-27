@@ -1,0 +1,448 @@
+i {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Chat .add-image-container {
+  width: 100vw;
+  position: fixed;
+  bottom: 40px;
+  max-width: 800px;
+}
+.Chat .add-image {
+  border-radius: 10px;
+  width: 70%;
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+.Chat #uploadImg {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.Chat .add-image i {
+  width: 40%;
+  margin-bottom: 30px;
+  color: #f9f9f9;
+}
+.Chat {
+  background-color: transparent;
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  height: 100vh;
+  border-left: 0.1px solid #f9f9f9;
+  border-right: 0.1px solid #f9f9f9;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.chat-info {
+  width: 100%;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  position: relative;
+}
+.chatbox {
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 80%;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.chatbox::-webkit-scrollbar {
+  display: none;
+}
+.chat-info i {
+  color: #f9f9f9;
+  font-size: 20px;
+  margin: 20px;
+}
+.chat-info img {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.target {
+  margin-top: 15px;
+  text-align: start;
+  overflow-x: hidden;
+}
+.target .target-name {
+  color: #f9f9f9;
+  font-size: 12px;
+}
+.target .online {
+  font-size: 10px;
+  color: #f9f9f9;
+  margin-top: 2px;
+  font-weight: 600;
+}
+.target .offline {
+  font-size: 10px;
+  color: #f9f9f9;
+  margin-top: 2px;
+}
+#send-Image {
+  position: absolute;
+  right: 20px;
+}
+#inputImage {
+  position: absolute;
+  right: 38px;
+  opacity: 0;
+  z-index: 100;
+  width: 20px;
+  height: 45px;
+  top: 18px;
+}
+#rec-btn {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  position: absolute;
+  right: 80px;
+  top: 10px;
+}
+#send-voice {
+  margin: 10px;
+}
+#send-voice-active {
+  margin: 10px;
+  -webkit-animation: recording 1s infinite;
+  animation: recording 1s infinite;
+}
+.recordTime {
+  z-index: 100000;
+  color: #f9f9f9;
+}
+.recordTime-active {
+  opacity: 0.5;
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  z-index: 100000;
+  color: #f9f9f9;
+  animation: recording 1s infinite 0.1s;
+}
+.target-text {
+  position: relative;
+  width: 50%;
+  border-radius: 4px;
+  margin: 20px;
+  margin-right: 47%;
+  font-size: 13px;
+  border: 0.5px solid #f9f9f9;
+  color: #eeeeee;
+  -webkit-animation: enterTarget 0.5s forwards;
+  animation: enterTarget 0.5s forwards;
+}
+.target-text p {
+  line-height: 30px;
+}
+.target-text img {
+  width: 102%;
+  margin-left: -1%;
+  margin-top: 3px;
+  border-radius: 5px;
+}
+
+.target-text .massageTime {
+  position: absolute;
+  bottom: 0%;
+  left: 100vw;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.my-text .massageTime {
+  position: absolute;
+  bottom: 0%;
+  right: 100vw;
+  opacity: 0.2;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  color: #f9f9f9;
+}
+.target-text:hover .massageTime {
+  position: absolute;
+  bottom: 0%;
+  left: 105%;
+}
+.my-text:hover .massageTime {
+  position: absolute;
+  bottom: 0%;
+  right: 105%;
+  color: #f9f9f9;
+}
+.my-text {
+  position: relative;
+  border: 0.5px solid #f9f9f9;
+  color: #eeeeee;
+  width: 50%;
+  border-radius: 4px;
+  margin: 20px;
+  margin-left: 47%;
+  font-size: 13px;
+  -webkit-animation: enterMymassages 0.5s forwards;
+  animation: enterMymassages 0.5s forwards;
+}
+.my-text img {
+  width: 102%;
+  margin-left: -1%;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+.my-text p {
+  line-height: 30px;
+}
+audio {
+  overflow: hidden;
+  width: 200px;
+  border-radius: 10px;
+  height: 45px;
+  display: none;
+}
+.audio-ui {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 80%;
+  margin: auto;
+}
+.audio-ui i {
+  font-size: 20px;
+}
+.progress-line {
+  height: 20px;
+  width: 70%;
+  border-radius: 5px;
+  border: 0.5px solid #f9f9f9;
+}
+.progress-active {
+  opacity: 1;
+  height: 20px;
+  background-color: #f9f9f9;
+  width: 4px;
+  border-radius: 5px;
+  -webkit-animation: audio 5s forwards;
+  animation: audio 5s forwards;
+}
+.progress {
+  opacity: 1;
+  height: 20px;
+  background-color: #f9f9f9;
+  width: 4px;
+  border-radius: 5px;
+}
+#form {
+  width: 100%;
+  max-width: 800px;
+  bottom: 10px;
+  position: fixed;
+  height: 40px;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+}
+.typing-input {
+  margin-left: 40px;
+  background-color: #111111;
+  background-image: ;
+  border: 1px solid #f9f9f9;
+  height: 25px;
+  width: 70%;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 10px 0.1px black;
+  box-shadow: 0px 5px 10px 0.1px black;
+  text-align: center;
+  color: #eeeeee;
+  margin-top: 0px;
+}
+.send-icon {
+  margin-left: 3%;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  width: 10%;
+  background-color: transparent;
+  border: 0px;
+}
+.send-icon i {
+  font-size: 20px;
+  color: #f9f9f9;
+}
+#date {
+  color: #f9f9f9;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.active {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f9f9f9;
+  font-size: 25px;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotateY();
+  transform: rotateY();
+  z-index: 1000;
+}
+.loading {
+  display: none;
+}
+.active p {
+  border: 1px solid #f9f9f9;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  animation: loading 2s infinite;
+  -webkit-animation: loading 2s infinite;
+}
+.activeImg {
+  position: relative;
+  width: 50%;
+  margin-left: 47%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 50px;
+  border-radius: 10px;
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #f9f9f9;
+  font-size: 25px;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotateY();
+  transform: rotateY();
+  z-index: 1000;
+  border: 1px solid #f9f9f9;
+}
+.loadingImg {
+  display: none;
+}
+.activeImg p {
+  border: 1px solid #f9f9f9;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  color: #f9f9f9;
+  -webkit-animation: loading 2s infinite;
+  animation: loading 2s infinite;
+}
+@keyframes enterMymassages {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+@-webkit-keyframes enterMymassages {
+  0% {
+    right: 100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+@keyframes enterTarget {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@-webkit-keyframes enterTarget {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes recording {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    color: rgb(204, 78, 78);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes recording {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    color: rgb(204, 78, 78);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes audio {
+  0% {
+    margin-left: 0;
+  }
+  99% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+@keyframes audio {
+  0% {
+    margin-left: 0;
+  }
+  99% {
+    margin-left: 100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,37 @@
+.SIGNUP {
+  padding-bottom: 200px;
+  z-index: 1;
+}
+.SIGNUP h1 {
+  margin-top: 250px;
+}
+#login-link {
+  position: relative;
+  color: #f9f9f9;
+  font-size: 12px;
+  top: 150px;
+  line-height: 200%;
+}
+.SIGNUP input {
+  color: #f9f9f9;
+  background-color: transparent;
+  border: 0.8px solid #f9f9f9;
+  display: block;
+  margin: auto;
+  height: 50px;
+  text-align: center;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 20px;
+  max-width: 400px;
+}
+#EMAIL {
+  margin-top: 20px;
+}
+#NAME {
+  margin-top: 50px;
+}
+#SUBMIT {
+  width: 50%;
+  max-width: 200px;
+}

@@ -1,0 +1,122 @@
+.svg {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-animation: disappear 2s forwards 5s;
+  animation: disappear 2s forwards 5s;
+}
+svg {
+  z-index: 100;
+  overflow: visible;
+  margin: auto;
+  width: 185px;
+}
+.st0 {
+  -webkit-transform: scale(0.18);
+  -ms-transform: scale(0.18);
+  transform: scale(0.18);
+  fill: #747474;
+  stroke-width: 0.2px;
+  stroke: #747474;
+}
+.st1 {
+  -webkit-transform: scale(0.18);
+  -ms-transform: scale(0.18);
+  transform: scale(0.18);
+  fill: transparent;
+  stroke-width: 10px;
+  stroke: rgb(230, 230, 230);
+}
+.st2 {
+  -webkit-transform: scale(0.18);
+  -ms-transform: scale(0.18);
+  transform: scale(0.18);
+  fill: #4d4d4d;
+  stroke-width: 0.2px;
+  stroke: #4d4d4d;
+}
+#c {
+  stroke-dasharray: 3600;
+  stroke-dashoffset: 3600;
+  -webkit-animation: lettersStroke 4s forwards, fillletters 1s forwards 4s;
+  animation: lettersStroke 4s forwards, fillletters 1s forwards 4s;
+}
+#h {
+  stroke-dasharray: 3600;
+  stroke-dashoffset: 3600;
+  -webkit-animation: lettersStroke 4s forwards 1s, fillletters 1s forwards 4s;
+  animation: lettersStroke 4s forwards 1s, fillletters 1s forwards 4s;
+}
+#a {
+  stroke-dasharray: 3600;
+  stroke-dashoffset: 3600;
+  -webkit-animation: lettersStroke 4s forwards 2s, fillletters 1s forwards 4s;
+  animation: lettersStroke 4s forwards 2s, fillletters 1s forwards 4s;
+}
+#t {
+  stroke-dasharray: 3600;
+  stroke-dashoffset: 3600;
+  -webkit-animation: lettersStroke 4s forwards 3s, fillletters 1s forwards 4s;
+  animation: lettersStroke 4s forwards 3s, fillletters 1s forwards 4s;
+}
+
+@-webkit-keyframes lettersStroke {
+  from {
+    stroke-dashoffset: 3600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes lettersStroke {
+  from {
+    stroke-dashoffset: 3600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes fillletters {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: rgb(230, 230, 230);
+  }
+}
+@keyframes fillletters {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: rgb(230, 230, 230);
+  }
+}
+@-webkit-keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

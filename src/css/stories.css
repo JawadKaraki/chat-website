@@ -1,0 +1,122 @@
+i {
+  font-size: 20px;
+}
+
+p {
+  font-family: DIN pro;
+}
+.stories {
+  color: #f9f9f9;
+}
+.storyHeader {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  -ms-flex-pack: space-between;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100vw;
+}
+.storyHeader i {
+  margin: 20px;
+  margin-left: 5vw;
+  color: #f9f9f9;
+  font-size: 25px;
+}
+#plus {
+  margin-right: 5vw;
+}
+#plus input[type="file"] {
+  position: absolute;
+  top: 20px;
+  right: 8vw;
+  height: 30px;
+  width: 30px;
+  opacity: 0;
+}
+.stories .add-image {
+  margin: auto;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  width: 90vw;
+  border: 0.8px solid #f9f9f9;
+  color: #f9f9f9;
+  font-size: 25px;
+}
+.stories #uploadImg {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #f9f9f9;
+}
+
+.stories .add-image i {
+  width: 40%;
+  margin-bottom: 40px;
+}
+.stories .images {
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox; /* TWEENER - IE 10 */ /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100vw;
+}
+.images .right {
+  width: 50vw;
+}
+.images .left {
+  width: 50vw;
+}
+.images img {
+  width: 40vw;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.img-container {
+  position: relative;
+}
+#delete {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-size: 25px;
+  opacity: 0.5;
+  z-index: 1000;
+  transition: 0.5s;
+}
+#delete:hover {
+  opacity: 1;
+}
+.images .imageData {
+  position: absolute;
+  height: 200px;
+  width: 40vw;
+  border-radius: 10px;
+  left: 5vw;
+  z-index: -1;
+  top: 10px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  color: #f9f9f9;
+  font-size: 12px;
+  background-color: black;
+}
+.images #email {
+  overflow-x: visible;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.images #date {
+  opacity: 1;
+}
+.img-container:hover .imageData {
+  z-index: 1;
+  top: 30px;
+  opacity: 0.5;
+}
